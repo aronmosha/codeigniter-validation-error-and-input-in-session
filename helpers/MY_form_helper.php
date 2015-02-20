@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-if ( ! function_exists('set_val'))
+if ( ! function_exists('set_value'))
 {
     function set_value($name)
     {
@@ -10,9 +10,9 @@ if ( ! function_exists('set_val'))
 		return $CI->session->flashdata($name.$suffix);    
 	}   
 }
-if ( ! function_exists('get_error'))
+if ( ! function_exists('form_error'))
 {
-    function set_error($name)
+    function form_error($name)
     {
     	$suffix='_error';
         $CI =& get_instance();

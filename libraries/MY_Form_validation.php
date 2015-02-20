@@ -8,8 +8,10 @@ class MY_Form_validation extends CI_Form_validation
 
   public function run()
   {
-    parent::run();
+    $run=parent::run();
     self::persist();
+    return $run;
+
   }
 
   function persist()
@@ -31,5 +33,6 @@ class MY_Form_validation extends CI_Form_validation
     return;
     
   }
+
   
 }
